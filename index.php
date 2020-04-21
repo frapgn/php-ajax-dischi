@@ -32,16 +32,20 @@
                     </div>
                 </div>
             <?php } ?>
-
-            <?php // VERSIONE FINALE ?>
-            
         </div>
     </main>
 
     <!-- Album Template -->
     <script id="album-template" type="text/x-handlebars-template">
-        <div class="album">
-
+        <div class="album-wrapper">
+            <div class="album">
+                <div class="cover">
+                    <img src="{{cover}}" alt="">
+                </div>
+                <div class="title">{{title}}></div>
+                <div class="artist">{{artist}}</div>
+                <div class="year">{{year}}</div>
+            </div>
         </div>
     </script>
 
