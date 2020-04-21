@@ -1,0 +1,7 @@
+main {
+    height: calc(100vh - 50px);
+    background-color: rgb(110, 110, 110);
+    .container {
+        @include container;
+    }
+}

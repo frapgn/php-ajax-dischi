@@ -1,5 +1,12 @@
 
 header {
     height: 50px;
+    padding: 10px;
     background-color: rgb(42, 42, 42);
+    #logo {
+        height: 100%;
+        img {
+            height: 100%;
+        }
+    }
 }
