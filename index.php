@@ -18,18 +18,23 @@
 
     <main>
         <div class="container">
+            <?php // VERSIONE SOLO PHP ?>
             <?php include 'data.php' ?>
             <?php foreach ($albums as $value) { ?>
-                <div class="album">
-                    <div class="cover">
-                        <img src="<? echo $value['cover']?>" alt="">
+                <div class="album-wrapper">
+                    <div class="album">
+                        <div class="cover">
+                            <img src="<? echo $value['cover']?>" alt="">
+                        </div>
+                        <div class="title"><? echo $value['title']?></div>
+                        <div class="artist"><? echo $value['artist']?></div>
+                        <div class="year"><? echo $value['year']?></div>
                     </div>
-                    <div class="title"><? echo $value['title']?></div>
-                    <div class="artist"><? echo $value['artist']?></div>
-                    <div class="year"><? echo $value['year']?></div>
                 </div>
             <?php } ?>
 
+            <?php // VERSIONE FINALE ?>
+            
         </div>
     </main>
 

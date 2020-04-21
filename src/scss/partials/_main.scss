@@ -1,7 +1,30 @@
 main {
     height: calc(100vh - 50px);
     background-color: rgb(110, 110, 110);
+    overflow: auto;
     .container {
         @include container;
+        display: flex;
+        flex-wrap: wrap;
+        .album-wrapper {
+            padding: 5px;
+            flex-basis: 180px;
+            flex-grow: 1;
+            .album {
+                background-color: rgba(0,0,0,0.5);
+                padding: 5px;
+                border-radius: 5px;
+                text-align: center;
+                .cover {
+                    width: 100%;
+                    border-radius: 5px;
+                    overflow: hidden;
+                    display: flex; // fix spazio sotto l'immagine
+                    img {
+                        width: 100%;
+                    }
+                }
+            }
+        }
     }
 }
